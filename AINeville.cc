@@ -38,7 +38,7 @@ struct PLAYER_NAME : public Player {
         taken_objectives.clear();
 
         for (int i = 0; i < 4; i++) {
-            if (i != me() and probab_win(i)<0.5) {
+            if (i != me() and probab_win(i)<0.33) {
                 enemy_players.push_back(i);
             }
         }
