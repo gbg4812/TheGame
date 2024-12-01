@@ -1,6 +1,6 @@
 #include "Player.hh"
 #include "Structs.hh"
-#include <array>
+#include <iostream>
 #include <list>
 #include <math.h>
 #include <queue>
@@ -22,38 +22,8 @@ struct PLAYER_NAME : public Player {
      * Types and attributes for your player can be defined here.
      */
 
-    struct TargetWizard {
-        double probab;
-        int dist;
-        Pos path;
-        int id;
-        bool operator<(const TargetWizard &other) {
-            if (this->probab < other.probab) {
-                return true;
-            } else if (this->probab > other.probab) {
-                return false;
-            } else {
-                if (this->dist > other.dist) {
-                    return true;
-                } else {
-                    return false;
-                }
-            }
-        }
-    };
-
-    friend bool operator>(const TargetWizard w1, const TargetWizard w2) {
-        if (w1.probab > w2.probab) {
-            return true;
-        } else if (w1.probab < w2.probab) {
-            return false;
-        } else {
-            return w1.dist < w2.dist;
-        }
-    }
-
     vector<Dir> wizard_dirs = {Up, Down, Right, Left};
-    vector<list<Pos>> wizard_enemies;
+    map<int, list<Pos>> wizard_enemies;
 
     /**
      * Play method, invoked once per each round.
@@ -61,7 +31,6 @@ struct PLAYER_NAME : public Player {
     virtual void play() {
         int radi_efecte = 30;
         list<int> enemy_players;
-        wizard_enemies.resize(wizards(me()).size());
 
         for (int i = 0; i < 4; i++) {
             if (i != me()) {
@@ -69,7 +38,7 @@ struct PLAYER_NAME : public Player {
             }
         }
 
-        // construeixo les llisted d'enemics
+        // construeixo les llistes d'enemics
         for (int id : wizards(me())) {
             Unit wiz = unit(id); // per cada mag meu
 
@@ -78,122 +47,42 @@ struct PLAYER_NAME : public Player {
                 for (int eid : wizards(epl)) { // per cada mag de l'enemic
                     Unit ewiz = unit(eid);
 
-                    Pos
+                    if (distance(ewiz.pos, wiz.pos) <= radi_efecte) {
+                        wizard_enemies[wiz.id].push_back(ewiz.pos);
+                    };
                 }
             }
         }
 
-        // calcular zones on hi ha wizards meus per buscar només en aquelles
-        // els llibres per cada wizard meu
         // "desactivar" celles al voltant enemigs abans de buscar camins cap
         // objectius!
 
         for (int id : wizards(me())) {
-            Unit wizard = unit(id);
-
-            for (int i = 0; i < 4; i++) {
-                if (i == me())
-                    continue;
-
-                double probab = probab_win(i);
-
-                for (int oid : wizards(i)) {
-                    Unit owizard = unit(oid);
-                    Pos opath = path(wizard.pos, owizard.pos);
-                    int dist = abs(opath.i) + abs(opath.j);
-                    if (dist > radi_efecte) {
-                        continue;
-                    }
-
-                    if (probab >= 0.4) {
-                        weakerUnits.push({probab, dist, opath, oid});
-                    } else {
-                        strongerUnits.push_back({probab, dist, opath, oid});
-                    }
-                }
-            }
-
-            // we search for a weak target with no intersection
-
-            Pos target = {-1, -1};
-            while (not weakerUnits.empty() and not pos_ok(target)) {
-                TargetWizard wunit = weakerUnits.top();
-                weakerUnits.pop();
-
-                for (TargetWizard sunit : strongerUnits) {
-                    if (safe_path(wizard.pos, wunit.path, sunit.path)) {
-                        target = wunit.path;
-                        break;
-                    }
-                }
-            }
-
-            if (pos_ok(target)) {
-                if (target.i > target.j) {
-                    if (target.i > 0) {
-                        move(wizard.id, Down);
-                    } else {
-                        move(wizard.id, Up);
-                    }
-                } else {
-
-                    if (target.j > 0) {
-                        move(wizard.id, Right);
-                    } else {
-                        move(wizard.id, Left);
-                    }
-                }
-            }
+            Unit wiz = unit(id); // per cada mag meu
+            auto paths = search_targets(wiz.pos, radi_efecte, id);
+            if (not paths.empty() and paths.top().first > 0)
+                move(id, paths.top().second);
         }
     }
 
-    bool safe_path(Pos mypos, Pos safep, Pos dangerp) {
-        dangerp = {dangerp.i - safep.i, dangerp.j - safep.j};
-        if (path_length(dangerp) >= path_length(safep)) {
-            return true;
+    inline Dir pos_to_dir(Pos in, Pos fi) {
+        if (in.i > fi.i and in.j == fi.j) {
+            return Up;
+        } else if (in.i < fi.i and in.j == fi.j) {
+            return Down;
+        } else if (in.j < fi.j and in.i == fi.i) {
+            return Right;
+        } else if (in.j > fi.j and in.i == fi.i) {
+            return Left;
         } else {
-            return false;
+            std::cerr << "Invalid pos to dir conversion!" << endl;
+            return Up;
         }
-
-        int i = 0;
-        int j = 0;
-        while (i < safep.i and j < safep.j) {
-            if (i < j) {
-                mypos.i += 1;
-                i++;
-            } else {
-                mypos.j += 1;
-                j++;
-            }
-
-            if (not pos_ok(mypos))
-                return false;
-            if (cell(mypos).type == Wall)
-                return false;
-        }
-
-        while (i < safep.i) {
-            if (not pos_ok(mypos))
-                return false;
-            if (cell(mypos).type == Wall)
-                return false;
-            mypos.i += 1;
-            i++;
-        }
-
-        while (j < safep.j) {
-            if (not pos_ok(mypos))
-                return false;
-            if (cell(mypos).type == Wall)
-                return false;
-            mypos.j += 1;
-            j++;
-        }
-
-        return true;
     }
 
-    inline int path_length(Pos path) { return path.i + path.j; }
+    inline int distance(Pos pos1, Pos pos2) {
+        return abs(pos2.i - pos1.i) + abs(pos2.j - pos1.j);
+    }
 
     inline double probab_win(int player) {
         return (double)magic_strength(me()) /
@@ -206,37 +95,94 @@ struct PLAYER_NAME : public Player {
         return n;
     }
 
-    // moviments en i o j a fer per anar de pos1 a pos2
-    Pos path(Pos pos1, Pos pos2) { return {pos2.i - pos1.i, pos2.j - pos1.j}; }
+    bool safe_pos(Pos pos, int radius, int wiz) {
 
-    // implementació bfs de moment no té utilitat
-    vector<list<Dir>> search_targets(Pos pos, int depth) {
-        vector<vector<list<Dir>>> paths;
-        vector<vector<int>> visited(depth, vector<int>(depth, 0));
-        queue<Pos> Q;
-        Q.push(pos);
-        int i = 0;
-        while (not Q.empty() and i < depth) {
-            Pos v = Q.front();
-            Q.pop();
+        if (cell(pos).type == Wall)
+            return false;
 
-            for (auto dir : wizard_dirs) {
-                Pos npos = v + dir;
-                if (not pos_ok(npos) or visited[npos.i][npos.j]) {
-                    continue;
+        for (Pos en : wizard_enemies[wiz]) {
+            if (distance(en, pos) < radius)
+                return false;
+        }
+
+        return true;
+    }
+
+    bool interesting_cell(Cell c, int dist) {
+        if (c.is_empty())
+            return false;
+
+        if (c.book)
+            return true;
+
+        Unit u = unit(c.id);
+        if (u.player == me() and u.is_in_conversion_process() and
+            u.rounds_for_converting() < dist) {
+            return true;
+        }
+
+        if (u.player != me() and not u.is_in_conversion_process()) {
+            return true;
+        }
+
+        if (u.player != me() and u.is_in_conversion_process() and
+            u.player_to_be_converted_to() != me()) {
+            return true;
+        }
+
+        return false;
+    }
+
+    // busca l'objectiu apetitoso més proxim evitant parets i enemics (mantenint
+    // el camí a un radi de l'enemic per que no et pugui interceptar) i retorna
+    // el camí a seguir si torna un camí buit és que no n'ha trobat cap
+    priority_queue<pair<int, Dir>> search_targets(Pos pos, int depth, int wiz) {
+        priority_queue<pair<int, Dir>> paths;
+        list<Pos> path;
+        vector<vector<int>> visited(2 * depth, vector<int>(2 * depth, 0));
+        stack<Pos> S;
+        S.push(pos);
+
+        while (not S.empty()) {
+            Pos nod = S.top();
+            path.push_back(nod);
+            Cell c = cell(nod);
+            if (interesting_cell(c, path.size() - 1)) {
+                cerr << "Interesting path for witcher at: " << pos << endl;
+                for (auto el : path) {
+                    cerr << el << ",";
                 }
-
-                Cell c = cell(v);
-
-                if (c.type == Wall) {
-                    continue;
+                cerr << endl;
+                if(path.size()>1) {
+                    Dir dir = pos_to_dir(pos, *(++path.begin()));
+                    paths.push({path.size() - 1, dir});
                 }
+            }
 
-                visited[npos.i][npos.j] = 1;
-                Q.push(v + dir);
+            bool isparent = false;
+
+            if (path.size() < depth) {
+                for (Dir dir : wizard_dirs) {
+                    Pos npos = nod + dir;
+                    if (pos_ok(npos) and not visited[npos.i - pos.i + depth]
+                                                    [npos.j - pos.j + depth]) {
+                        if (safe_pos(nod + dir, 0, wiz)) {
+                            isparent = true;
+                            visited[npos.i - pos.i + depth]
+                                   [npos.j - pos.j + depth] = 1;
+                            S.push(npos);
+                        }
+                    }
+                }
+            }
+
+            if (not isparent) {
+                path.pop_back();
+                S.pop();
             }
         }
-        return {};
+
+        return paths;
     }
 };
 
