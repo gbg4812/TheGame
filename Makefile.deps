@@ -1,8 +1,8 @@
 Action.o: Action.cc Action.hh Structs.hh Utils.hh Defs.hh
 AIDemo.o: AIDemo.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
  Defs.hh State.hh Action.hh Random.hh Registry.hh
-AINovice.o: AINovice.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
- Defs.hh State.hh Action.hh Random.hh Registry.hh
+AINeville.o: AINeville.cc Player.hh Info.hh Settings.hh Structs.hh \
+ Utils.hh Defs.hh State.hh Action.hh Random.hh Registry.hh
 AINull.o: AINull.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
  Defs.hh State.hh Action.hh Random.hh Registry.hh
 Board.o: Board.cc Board.hh Info.hh Settings.hh Structs.hh Utils.hh \
