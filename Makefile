@@ -4,7 +4,7 @@ DUMMY_OBJ = AIDummy.o
 EXTRA_OBJ =
 
 # Configuration
-OPTIMIZE = 3 # Optimization level    (0 to 3)
+OPTIMIZE = 0 # Optimization level    (0 to 3)
 DEBUG    = 1 # Compile for debugging (0 or 1)
 PROFILE  = 0 # Compile for profile   (0 or 1)
 
@@ -41,6 +41,9 @@ clean:
 
 view:
 	firefox ./Viewer/viewer.html&
+
+test:
+	./Game Demo Demo Demo Neville -s 0 < default.cnf > OUT2.txt
 
 Game:  $(OBJ) Game.o Main.o $(PLAYERS_OBJ) 
 	$(CXX) $^ -o $@ $(LDFLAGS)
