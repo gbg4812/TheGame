@@ -38,7 +38,7 @@ struct PLAYER_NAME : public Player {
         taken_objectives.clear();
 
         for (int i = 0; i < 4; i++) {
-            if (i != me() and probab_win(i)<0.33) {
+            if (i != me() and probab_win(i) < 0.33) {
                 enemy_players.push_back(i);
             }
         }
@@ -62,7 +62,10 @@ struct PLAYER_NAME : public Player {
         // "desactivar" celles al voltant enemigs abans de buscar camins cap
         // objectius!
 
-        // "taken objective" + afegir voldemort pos
+        // TODO: Compute Voldemort objective
+        // TODO: Compute Ghoust recipe
+        // TODO: Order in moves
+        // TODO: ONLY CHANGE OBJECTIVE IF NO LONGER OK
 
         for (int id : wizards(me())) {
             Unit wiz = unit(id); // per cada mag meu
@@ -111,8 +114,10 @@ struct PLAYER_NAME : public Player {
                 return false;
         }
 
-        if(c.id != -1 and unit(c.id).player == me()) return false;
-        if(distance(pos_voldemort(), pos) < 10) return false;
+        if (c.id != -1 and unit(c.id).player == me())
+            return false;
+        if (distance(pos_voldemort(), pos) < 10)
+            return false;
 
         return true;
     }
@@ -128,11 +133,12 @@ struct PLAYER_NAME : public Player {
             return true;
         }
 
-
         Unit u = unit(c.id);
-        if(u.type == Ghost) return false;
+        if (u.type == Ghost)
+            return false;
 
-        if(it != taken_objectives.end()) return false;
+        if (it != taken_objectives.end())
+            return false;
 
         if (u.player == me() and u.is_in_conversion_process() and
             u.rounds_for_converting() < dist) {
@@ -160,7 +166,8 @@ struct PLAYER_NAME : public Player {
     Dir search_targets(Pos pos, int depth, int wiz) {
         Dir res;
         map<Pos, Dir> parents;
-        vector<vector<int>> distances(2 * depth + 1, vector<int>(2 * depth + 1, -1));
+        vector<vector<int>> distances(2 * depth + 1,
+                                      vector<int>(2 * depth + 1, -1));
         queue<pair<Pos, Dir>> Q;
         Q.push({pos, Up});
         distances[depth][depth] = 0;
@@ -168,9 +175,9 @@ struct PLAYER_NAME : public Player {
         // by default go to non wall option and rotate between wizards
         auto dir_distrib = random_permutation(4);
         Decision current_best = {pos, Up};
-        for(int dirindx : dir_distrib) {
-            if(cell(pos).type != Wall) 
-               current_best = {pos, wizard_dirs[dirindx]};
+        for (int dirindx : dir_distrib) {
+            if (cell(pos).type != Wall)
+                current_best = {pos, wizard_dirs[dirindx]};
         }
 
         int current_best_dist = 0;
@@ -180,18 +187,21 @@ struct PLAYER_NAME : public Player {
             Decision nod = Q.front();
             Q.pop();
             parents.emplace(nod);
-            if (interesting_cell(nod.first, distances[nod.first.i - pos.i + depth]
-                                             [nod.first.j - pos.j + depth])) {
-                //cerr << "Interesting path for witcher at: " << pos << endl;
-                //cerr << "Interesting element at pos: " << nod.first << endl;
-                //cerr << "Direction to follow: " << nod.second << endl;
+            if (interesting_cell(nod.first,
+                                 distances[nod.first.i - pos.i + depth]
+                                          [nod.first.j - pos.j + depth])) {
+                // cerr << "Interesting path for witcher at: " << pos << endl;
+                // cerr << "Interesting element at pos: " << nod.first << endl;
+                // cerr << "Direction to follow: " << nod.second << endl;
                 return nod.second;
             }
 
             int dist = distances[nod.first.i - pos.i + depth]
-                                [nod.first.j - pos.j + depth]; // distancia fins al parent analitzat
+                                [nod.first.j - pos.j +
+                                 depth]; // distancia fins al parent analitzat
 
-            if(dist > current_best_dist) current_best = nod; 
+            if (dist > current_best_dist)
+                current_best = nod;
 
             if (dist < depth) {
                 for (Dir dir : wizard_dirs) {
@@ -201,7 +211,7 @@ struct PLAYER_NAME : public Player {
                                              -1) {
                         if (safe_pos(npos, dist, wiz)) {
                             distances[npos.i - pos.i + depth]
-                                     [npos.j - pos.j + depth] = dist+1;
+                                     [npos.j - pos.j + depth] = dist + 1;
                             if (is_first) {
 
                                 Q.push({npos, dir});
@@ -212,7 +222,6 @@ struct PLAYER_NAME : public Player {
                 }
                 is_first = false;
             }
-
         }
 
         return current_best.second;
