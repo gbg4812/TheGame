@@ -43,7 +43,7 @@ view:
 	firefox ./Viewer/viewer.html&
 
 test:
-	./Game Demo Demo Demo Neville -s 0 < default.cnf > OUT2.txt
+	./Game Demo Demo Demo Ron -s 0 < default.cnf > OUT2.txt
 
 Game:  $(OBJ) Game.o Main.o $(PLAYERS_OBJ) 
 	$(CXX) $^ -o $@ $(LDFLAGS)
