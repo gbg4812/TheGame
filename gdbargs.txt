@@ -1,0 +1,1 @@
+run Luna Luna Luna Nymphadora -s 10 <default.cnf >OUT.txt

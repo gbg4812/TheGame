@@ -2,7 +2,7 @@
 EXTRA_OBJ =
 
 # Configuration
-OPTIMIZE = 3 # Optimization level    (0 to 3)
+OPTIMIZE = 0 # Optimization level    (0 to 3)
 DEBUG    = 1 # Compile for debugging (0 or 1)
 PROFILE  = 0 # Compile for profile   (0 or 1)
 
@@ -40,13 +40,6 @@ clean:
 view:
 	firefox ./Viewer/viewer.html&
 
-test4:
-	./Game Ron Ron Ron Hermione -s 1 < default.cnf 2>&1 > OUT1.txt | grep score
-	./Game Ron Ron Ron Hermione -s 2 < default.cnf 2>&1 > OUT2.txt | grep score
-	./Game Ron Ron Ron Hermione -s 3 < default.cnf 2>&1 > OUT3.txt | grep score
-	./Game Ron Ron Ron Hermione -s 4 < default.cnf 2>&1 > OUT4.txt | grep score
-test1:
-	./Game Ron Ron Ron Hermione -s 1 < default.cnf > OUT.txt
 
 Game:  $(OBJ) Game.o Main.o $(PLAYERS_OBJ) 
 	$(CXX) $^ -o $@ $(LDFLAGS)

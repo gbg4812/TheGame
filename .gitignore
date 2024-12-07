@@ -2,4 +2,4 @@
 .vscode/
 Game
 game/
-*.txt
+OUT*.txt

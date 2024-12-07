@@ -1,0 +1,2463 @@
+info: seed 111
+info: loading game
+info: loaded game
+info: loading player Luna
+info: loading player Nymphadora
+info: loading player SirNicolas
+info: loading player Ron
+info: players loaded
+info: start round 0
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (26, 27)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 0
+info: start round 1
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (25, 26)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 1
+info: start round 2
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (24, 25)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 2
+info: start round 3
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (23, 24)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 3
+info: start round 4
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (22, 24)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 4
+info: start round 5
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (21, 25)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 5
+info: start round 6
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (20, 26)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 6
+info: start round 7
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 7
+info: start round 8
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 8
+info: start round 9
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 9
+info: start round 10
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 10
+info: start round 11
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 11
+info: start round 12
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 12
+info: start round 13
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (19, 21)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 13
+info: start round 14
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (19, 22)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 14
+info: start round 15
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (19, 23)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 15
+info: start round 16
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (20, 24)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 16
+info: start round 17
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (19, 25)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 17
+info: start round 18
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (18, 26)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 18
+info: start round 19
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (17, 26)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 19
+info: start round 20
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 79 at pos: (9, 22)
+Not safe path found unit: 80 at pos: (51, 16)
+Not safe path found unit: 2 at pos: (16, 27)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 20
+info: start round 21
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (15, 26)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 21
+info: start round 22
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 57 at pos: (54, 15)
+Not safe path found unit: 79 at pos: (9, 22)
+Not safe path found unit: 80 at pos: (50, 15)
+Not safe path found unit: 2 at pos: (16, 27)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 22
+info: start round 23
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (15, 26)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 23
+info: start round 24
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (14, 25)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 24
+info: start round 25
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (13, 26)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 25
+info: start round 26
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (12, 26)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 26
+info: start round 27
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (11, 27)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 27
+info: start round 28
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (10, 28)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 28
+info: start round 29
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (9, 29)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 29
+info: start round 30
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (8, 28)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 30
+info: start round 31
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (8, 27)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 31
+info: start round 32
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (7, 26)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 32
+info: start round 33
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (8, 25)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 33
+info: start round 34
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (7, 24)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 34
+info: start round 35
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (7, 23)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 35
+info: start round 36
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (8, 24)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 36
+info: start round 37
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (7, 23)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 37
+info: start round 38
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (8, 24)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 38
+info: start round 39
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (9, 25)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 39
+info: start round 40
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (10, 25)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 40
+info: start round 41
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (11, 24)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 41
+info: start round 42
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (10, 25)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 42
+info: start round 43
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (9, 26)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 43
+info: start round 44
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (10, 25)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 44
+info: start round 45
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (9, 26)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 45
+info: start round 46
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (8, 25)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 46
+info: start round 47
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (8, 24)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 47
+info: start round 48
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (7, 25)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 48
+info: start round 49
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (8, 24)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 49
+info: start round 50
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (9, 25)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 50
+info: start round 51
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (9, 24)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 51
+info: start round 52
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (10, 23)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 52
+info: start round 53
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (10, 22)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 53
+info: start round 54
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (11, 21)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 54
+info: start round 55
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (12, 20)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 55
+info: start round 56
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (11, 19)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 56
+info: start round 57
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (10, 18)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 57
+info: start round 58
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (11, 19)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 58
+info: start round 59
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (10, 18)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 59
+info: start round 60
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (9, 18)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 60
+info: start round 61
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 61
+info: start round 62
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 62
+info: start round 63
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 63
+info: start round 64
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (10, 16)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 64
+info: start round 65
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (9, 17)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 65
+info: start round 66
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (9, 18)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 66
+info: start round 67
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (10, 17)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 67
+info: start round 68
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (9, 16)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 68
+info: start round 69
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (9, 17)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 69
+info: start round 70
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (8, 16)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 70
+info: start round 71
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (9, 17)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 71
+info: start round 72
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 72
+info: start round 73
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 73
+info: start round 74
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 74
+info: start round 75
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 75
+info: start round 76
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 76
+info: start round 77
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 77
+info: start round 78
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 78
+info: start round 79
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 79
+info: start round 80
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 80
+info: start round 81
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (16, 24)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 81
+info: start round 82
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (17, 25)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 82
+info: start round 83
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (18, 26)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 83
+info: start round 84
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (17, 25)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 84
+info: start round 85
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (16, 26)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 85
+info: start round 86
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (15, 27)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 86
+info: start round 87
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (14, 28)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 87
+info: start round 88
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (13, 29)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 88
+info: start round 89
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (12, 29)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 89
+info: start round 90
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (12, 28)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 90
+info: start round 91
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (12, 27)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 91
+info: start round 92
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (12, 26)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 92
+info: start round 93
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (13, 26)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 93
+info: start round 94
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (14, 25)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 94
+info: start round 95
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (15, 24)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 95
+info: start round 96
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (14, 23)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 96
+info: start round 97
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (13, 24)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 97
+info: start round 98
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (12, 24)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 98
+info: start round 99
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (13, 23)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 99
+info: start round 100
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (13, 24)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 100
+info: start round 101
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (12, 24)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 101
+info: start round 102
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (11, 24)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 102
+info: start round 103
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (10, 24)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 103
+info: start round 104
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (10, 23)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 104
+info: start round 105
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (10, 22)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 105
+info: start round 106
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (9, 23)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 106
+info: start round 107
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (8, 24)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 107
+info: start round 108
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (9, 24)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 108
+info: start round 109
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (10, 25)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 109
+info: start round 110
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 110
+info: start round 111
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 49 at pos: (11, 16)
+Not safe path found unit: 2 at pos: (9, 25)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 111
+info: start round 112
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 58 at pos: (53, 42)
+Not safe path found unit: 83 at pos: (52, 41)
+Not safe path found unit: 2 at pos: (9, 26)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 112
+info: start round 113
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (10, 27)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 113
+info: start round 114
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (10, 28)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 114
+info: start round 115
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 115
+info: start round 116
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (8, 30)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 116
+info: start round 117
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 117
+info: start round 118
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (10, 28)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 118
+info: start round 119
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 119
+info: start round 120
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 120
+info: start round 121
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 121
+info: start round 122
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (8, 30)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 122
+info: start round 123
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (9, 29)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 123
+info: start round 124
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (10, 30)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 124
+info: start round 125
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (11, 30)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 125
+info: start round 126
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (12, 29)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 126
+info: start round 127
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (11, 29)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 127
+info: start round 128
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (12, 28)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 128
+info: start round 129
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (11, 29)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 129
+info: start round 130
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 61 at pos: (17, 23)
+Not safe path found unit: 64 at pos: (40, 47)
+Not safe path found unit: 73 at pos: (42, 57)
+Not safe path found unit: 75 at pos: (16, 27)
+Not safe path found unit: 2 at pos: (10, 28)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 130
+info: start round 131
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (9, 29)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 131
+info: start round 132
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (10, 30)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 132
+info: start round 133
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 53 at pos: (45, 57)
+Not safe path found unit: 75 at pos: (16, 26)
+Not safe path found unit: 83 at pos: (50, 36)
+Not safe path found unit: 2 at pos: (9, 29)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 133
+info: start round 134
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 34 at pos: (52, 57)
+Not safe path found unit: 73 at pos: (40, 57)
+Not safe path found unit: 75 at pos: (15, 26)
+Not safe path found unit: 83 at pos: (49, 36)
+Not safe path found unit: 2 at pos: (10, 28)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 134
+info: start round 135
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 45 at pos: (42, 37)
+Not safe path found unit: 58 at pos: (54, 36)
+Not safe path found unit: 83 at pos: (50, 36)
+Not safe path found unit: 2 at pos: (11, 29)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 135
+info: start round 136
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 70 at pos: (42, 56)
+Not safe path found unit: 73 at pos: (39, 57)
+Not safe path found unit: 83 at pos: (49, 36)
+Not safe path found unit: 2 at pos: (11, 29)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 136
+info: start round 137
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 57 at pos: (49, 18)
+Not safe path found unit: 58 at pos: (55, 37)
+Not safe path found unit: 64 at pos: (39, 41)
+Not safe path found unit: 70 at pos: (42, 57)
+Not safe path found unit: 73 at pos: (39, 56)
+Not safe path found unit: 83 at pos: (49, 35)
+Not safe path found unit: 2 at pos: (12, 28)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 137
+info: start round 138
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 53 at pos: (43, 56)
+Not safe path found unit: 57 at pos: (50, 18)
+Not safe path found unit: 58 at pos: (55, 36)
+Not safe path found unit: 64 at pos: (39, 42)
+Not safe path found unit: 70 at pos: (42, 58)
+Not safe path found unit: 73 at pos: (40, 56)
+Not safe path found unit: 83 at pos: (49, 34)
+Not safe path found unit: 2 at pos: (11, 29)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 138
+info: start round 139
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 57 at pos: (49, 18)
+Not safe path found unit: 58 at pos: (56, 36)
+Not safe path found unit: 64 at pos: (40, 42)
+Not safe path found unit: 70 at pos: (41, 58)
+Not safe path found unit: 83 at pos: (49, 33)
+Not safe path found unit: 2 at pos: (12, 30)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 139
+info: start round 140
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 53 at pos: (44, 55)
+Not safe path found unit: 54 at pos: (53, 33)
+Not safe path found unit: 58 at pos: (56, 35)
+Not safe path found unit: 64 at pos: (40, 43)
+Not safe path found unit: 79 at pos: (42, 55)
+Not safe path found unit: 83 at pos: (49, 32)
+Not safe path found unit: 2 at pos: (11, 29)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 140
+info: start round 141
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 57 at pos: (49, 18)
+Not safe path found unit: 58 at pos: (57, 35)
+Not safe path found unit: 61 at pos: (17, 24)
+Not safe path found unit: 79 at pos: (42, 54)
+Not safe path found unit: 83 at pos: (49, 33)
+Not safe path found unit: 2 at pos: (11, 28)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 141
+info: start round 142
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 57 at pos: (50, 18)
+Not safe path found unit: 58 at pos: (56, 35)
+Not safe path found unit: 61 at pos: (17, 25)
+Not safe path found unit: 79 at pos: (41, 54)
+Not safe path found unit: 83 at pos: (50, 33)
+Not safe path found unit: 2 at pos: (11, 27)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 142
+info: start round 143
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 57 at pos: (50, 19)
+Not safe path found unit: 58 at pos: (57, 35)
+Not safe path found unit: 61 at pos: (17, 26)
+Not safe path found unit: 79 at pos: (41, 55)
+Not safe path found unit: 83 at pos: (49, 33)
+Not safe path found unit: 2 at pos: (10, 26)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 143
+info: start round 144
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 61 at pos: (17, 27)
+Not safe path found unit: 63 at pos: (50, 19)
+Not safe path found unit: 73 at pos: (41, 56)
+Not safe path found unit: 79 at pos: (40, 55)
+Not safe path found unit: 83 at pos: (49, 34)
+Not safe path found unit: 2 at pos: (11, 26)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 144
+info: start round 145
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 49 at pos: (53, 19)
+Not safe path found unit: 54 at pos: (50, 33)
+Not safe path found unit: 57 at pos: (50, 20)
+Not safe path found unit: 58 at pos: (56, 36)
+Not safe path found unit: 61 at pos: (18, 27)
+Not safe path found unit: 63 at pos: (51, 19)
+Not safe path found unit: 79 at pos: (40, 55)
+Not safe path found unit: 83 at pos: (49, 33)
+Not safe path found unit: 2 at pos: (12, 25)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 145
+info: start round 146
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 52 at pos: (21, 26)
+Not safe path found unit: 54 at pos: (50, 34)
+Not safe path found unit: 57 at pos: (50, 20)
+Not safe path found unit: 58 at pos: (56, 35)
+Not safe path found unit: 61 at pos: (18, 26)
+Not safe path found unit: 63 at pos: (50, 19)
+Not safe path found unit: 79 at pos: (40, 54)
+Not safe path found unit: 83 at pos: (49, 34)
+Not safe path found unit: 2 at pos: (13, 25)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 146
+info: start round 147
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 52 at pos: (20, 26)
+Not safe path found unit: 53 at pos: (45, 53)
+Not safe path found unit: 57 at pos: (50, 20)
+Not safe path found unit: 58 at pos: (57, 35)
+Not safe path found unit: 61 at pos: (19, 26)
+Not safe path found unit: 63 at pos: (51, 19)
+Not safe path found unit: 75 at pos: (10, 18)
+Not safe path found unit: 79 at pos: (40, 53)
+Not safe path found unit: 83 at pos: (48, 34)
+Not safe path found unit: 2 at pos: (14, 26)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 147
+info: start round 148
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 52 at pos: (21, 26)
+Not safe path found unit: 61 at pos: (19, 27)
+Not safe path found unit: 75 at pos: (10, 17)
+Not safe path found unit: 79 at pos: (41, 53)
+Not safe path found unit: 2 at pos: (14, 25)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 148
+info: start round 149
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 52 at pos: (21, 25)
+Not safe path found unit: 57 at pos: (50, 20)
+Not safe path found unit: 58 at pos: (56, 34)
+Not safe path found unit: 61 at pos: (19, 28)
+Not safe path found unit: 75 at pos: (11, 17)
+Not safe path found unit: 79 at pos: (40, 53)
+Not safe path found unit: 83 at pos: (50, 34)
+Not safe path found unit: 2 at pos: (15, 24)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 149
+info: start round 150
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 44 at pos: (14, 23)
+Not safe path found unit: 52 at pos: (20, 25)
+Not safe path found unit: 58 at pos: (56, 33)
+Not safe path found unit: 61 at pos: (19, 29)
+Not safe path found unit: 63 at pos: (50, 18)
+Not safe path found unit: 75 at pos: (11, 16)
+Not safe path found unit: 77 at pos: (42, 57)
+Not safe path found unit: 79 at pos: (40, 54)
+Not safe path found unit: 2 at pos: (14, 25)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 150
+info: start round 151
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 44 at pos: (14, 22)
+Not safe path found unit: 52 at pos: (19, 25)
+Not safe path found unit: 58 at pos: (56, 34)
+Not safe path found unit: 61 at pos: (20, 29)
+Not safe path found unit: 75 at pos: (11, 17)
+Not safe path found unit: 77 at pos: (42, 58)
+Not safe path found unit: 79 at pos: (40, 55)
+Not safe path found unit: 2 at pos: (15, 26)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 151
+info: start round 152
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 52 at pos: (19, 24)
+Not safe path found unit: 58 at pos: (56, 33)
+Not safe path found unit: 61 at pos: (19, 29)
+Not safe path found unit: 75 at pos: (10, 17)
+Not safe path found unit: 77 at pos: (43, 58)
+Not safe path found unit: 79 at pos: (41, 55)
+Not safe path found unit: 2 at pos: (14, 25)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 152
+info: start round 153
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 53 at pos: (49, 51)
+Not safe path found unit: 55 at pos: (46, 26)
+Not safe path found unit: 58 at pos: (57, 33)
+Not safe path found unit: 61 at pos: (20, 29)
+Not safe path found unit: 63 at pos: (49, 18)
+Not safe path found unit: 75 at pos: (10, 18)
+Not safe path found unit: 77 at pos: (43, 57)
+Not safe path found unit: 79 at pos: (41, 54)
+Not safe path found unit: 2 at pos: (15, 25)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 153
+info: start round 154
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 36 at pos: (52, 14)
+Not safe path found unit: 37 at pos: (49, 21)
+Not safe path found unit: 45 at pos: (46, 40)
+Not safe path found unit: 51 at pos: (38, 40)
+Not safe path found unit: 52 at pos: (19, 22)
+Not safe path found unit: 53 at pos: (49, 52)
+Not safe path found unit: 58 at pos: (57, 34)
+Not safe path found unit: 61 at pos: (19, 29)
+Not safe path found unit: 63 at pos: (49, 19)
+Not safe path found unit: 64 at pos: (39, 39)
+Not safe path found unit: 75 at pos: (10, 19)
+Not safe path found unit: 77 at pos: (44, 57)
+Not safe path found unit: 79 at pos: (41, 55)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 154
+info: start round 155
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 37 at pos: (49, 20)
+Not safe path found unit: 42 at pos: (42, 26)
+Not safe path found unit: 45 at pos: (45, 40)
+Not safe path found unit: 51 at pos: (39, 40)
+Not safe path found unit: 52 at pos: (19, 21)
+Not safe path found unit: 53 at pos: (50, 52)
+Not safe path found unit: 61 at pos: (19, 28)
+Not safe path found unit: 63 at pos: (48, 19)
+Not safe path found unit: 64 at pos: (39, 38)
+Not safe path found unit: 75 at pos: (10, 20)
+Not safe path found unit: 77 at pos: (43, 57)
+Not safe path found unit: 79 at pos: (40, 55)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 155
+info: start round 156
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 34 at pos: (47, 44)
+Not safe path found unit: 36 at pos: (50, 14)
+Not safe path found unit: 42 at pos: (43, 26)
+Not safe path found unit: 45 at pos: (45, 39)
+Not safe path found unit: 51 at pos: (39, 41)
+Not safe path found unit: 52 at pos: (19, 20)
+Not safe path found unit: 53 at pos: (50, 53)
+Not safe path found unit: 61 at pos: (18, 28)
+Not safe path found unit: 64 at pos: (39, 37)
+Not safe path found unit: 75 at pos: (10, 21)
+Not safe path found unit: 77 at pos: (43, 56)
+Not safe path found unit: 79 at pos: (40, 56)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 156
+info: start round 157
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 17 at pos: (53, 56)
+Not safe path found unit: 34 at pos: (48, 44)
+Not safe path found unit: 42 at pos: (42, 26)
+Not safe path found unit: 44 at pos: (15, 25)
+Not safe path found unit: 45 at pos: (44, 39)
+Not safe path found unit: 51 at pos: (39, 42)
+Not safe path found unit: 52 at pos: (19, 19)
+Not safe path found unit: 53 at pos: (50, 52)
+Not safe path found unit: 64 at pos: (39, 36)
+Not safe path found unit: 75 at pos: (10, 20)
+Not safe path found unit: 77 at pos: (44, 56)
+Not safe path found unit: 79 at pos: (39, 56)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 157
+info: start round 158
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 17 at pos: (54, 56)
+Not safe path found unit: 27 at pos: (42, 21)
+Not safe path found unit: 34 at pos: (47, 44)
+Not safe path found unit: 42 at pos: (42, 25)
+Not safe path found unit: 44 at pos: (15, 26)
+Not safe path found unit: 45 at pos: (43, 39)
+Not safe path found unit: 51 at pos: (40, 42)
+Not safe path found unit: 52 at pos: (19, 20)
+Not safe path found unit: 53 at pos: (50, 51)
+Not safe path found unit: 64 at pos: (39, 37)
+Not safe path found unit: 75 at pos: (11, 20)
+Not safe path found unit: 77 at pos: (45, 56)
+Not safe path found unit: 79 at pos: (38, 56)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 158
+info: start round 159
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 51 at pos: (40, 41)
+Not safe path found unit: 53 at pos: (50, 50)
+Not safe path found unit: 61 at pos: (20, 29)
+Not safe path found unit: 73 at pos: (37, 51)
+Not safe path found unit: 75 at pos: (11, 19)
+Not safe path found unit: 77 at pos: (45, 55)
+Not safe path found unit: 79 at pos: (38, 57)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 159
+info: start round 160
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 17 at pos: (54, 54)
+Not safe path found unit: 32 at pos: (50, 48)
+Not safe path found unit: 44 at pos: (15, 26)
+Not safe path found unit: 51 at pos: (40, 42)
+Not safe path found unit: 52 at pos: (19, 18)
+Not safe path found unit: 53 at pos: (49, 50)
+Not safe path found unit: 64 at pos: (39, 35)
+Not safe path found unit: 75 at pos: (11, 20)
+Not safe path found unit: 77 at pos: (45, 56)
+Not safe path found unit: 79 at pos: (39, 57)
+Not safe path found unit: 2 at pos: (10, 30)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 160
+info: start round 161
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 17 at pos: (54, 53)
+Not safe path found unit: 32 at pos: (50, 49)
+Not safe path found unit: 51 at pos: (40, 43)
+Not safe path found unit: 53 at pos: (49, 49)
+Not safe path found unit: 61 at pos: (19, 28)
+Not safe path found unit: 64 at pos: (39, 34)
+Not safe path found unit: 73 at pos: (37, 51)
+Not safe path found unit: 75 at pos: (11, 19)
+Not safe path found unit: 77 at pos: (45, 55)
+Not safe path found unit: 79 at pos: (38, 57)
+Not safe path found unit: 2 at pos: (11, 29)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 161
+info: start round 162
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (12, 29)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 162
+info: start round 163
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (11, 28)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 163
+info: start round 164
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 45 at pos: (42, 36)
+Not safe path found unit: 51 at pos: (38, 44)
+Not safe path found unit: 53 at pos: (50, 47)
+Not safe path found unit: 61 at pos: (20, 28)
+Not safe path found unit: 64 at pos: (39, 31)
+Not safe path found unit: 77 at pos: (44, 55)
+Not safe path found unit: 79 at pos: (37, 57)
+Not safe path found unit: 2 at pos: (12, 28)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 164
+info: start round 165
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 77 at pos: (43, 55)
+Not safe path found unit: 79 at pos: (37, 58)
+Not safe path found unit: 2 at pos: (13, 28)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 165
+info: start round 166
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 45 at pos: (42, 36)
+Not safe path found unit: 53 at pos: (49, 46)
+Not safe path found unit: 77 at pos: (44, 55)
+Not safe path found unit: 79 at pos: (37, 57)
+Not safe path found unit: 2 at pos: (13, 27)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 166
+info: start round 167
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 45 at pos: (41, 36)
+Not safe path found unit: 53 at pos: (50, 46)
+Not safe path found unit: 79 at pos: (37, 56)
+Not safe path found unit: 2 at pos: (13, 26)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 167
+info: start round 168
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (14, 25)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 168
+info: start round 169
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (15, 24)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 169
+info: start round 170
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (14, 23)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 170
+info: start round 171
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 53 at pos: (50, 44)
+Not safe path found unit: 77 at pos: (40, 56)
+Not safe path found unit: 79 at pos: (35, 58)
+Not safe path found unit: 83 at pos: (55, 35)
+Not safe path found unit: 2 at pos: (15, 24)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 171
+info: start round 172
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (14, 23)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 172
+info: start round 173
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 2 at pos: (15, 23)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 173
+info: start round 174
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 174
+info: start round 175
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 44 at pos: (26, 28)
+Not safe path found unit: 53 at pos: (50, 42)
+Not safe path found unit: 55 at pos: (59, 27)
+Not safe path found unit: 58 at pos: (56, 28)
+Not safe path found unit: 61 at pos: (27, 26)
+Not safe path found unit: 64 at pos: (38, 23)
+Not safe path found unit: 80 at pos: (53, 23)
+Not safe path found unit: 83 at pos: (54, 32)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 175
+info: start round 176
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 43 at pos: (44, 33)
+Not safe path found unit: 44 at pos: (27, 28)
+Not safe path found unit: 53 at pos: (51, 42)
+Not safe path found unit: 58 at pos: (57, 28)
+Not safe path found unit: 64 at pos: (38, 22)
+Not safe path found unit: 77 at pos: (38, 59)
+Not safe path found unit: 79 at pos: (34, 58)
+Not safe path found unit: 80 at pos: (53, 22)
+Not safe path found unit: 83 at pos: (54, 33)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 176
+info: start round 177
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 54 at pos: (47, 28)
+Not safe path found unit: 55 at pos: (59, 27)
+Not safe path found unit: 58 at pos: (56, 28)
+Not safe path found unit: 64 at pos: (37, 22)
+Not safe path found unit: 77 at pos: (38, 59)
+Not safe path found unit: 83 at pos: (53, 33)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 177
+info: start round 178
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 58 at pos: (56, 27)
+Not safe path found unit: 64 at pos: (37, 21)
+Not safe path found unit: 83 at pos: (53, 32)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 178
+info: start round 179
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 53 at pos: (49, 43)
+Not safe path found unit: 58 at pos: (55, 27)
+Not safe path found unit: 64 at pos: (37, 22)
+Not safe path found unit: 83 at pos: (52, 32)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 179
+info: start round 180
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 58 at pos: (55, 26)
+Not safe path found unit: 83 at pos: (52, 33)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 180
+info: start round 181
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 55 at pos: (58, 26)
+Not safe path found unit: 58 at pos: (55, 25)
+Not safe path found unit: 83 at pos: (53, 33)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 181
+info: start round 182
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 32 at pos: (53, 47)
+Not safe path found unit: 55 at pos: (57, 26)
+Not safe path found unit: 58 at pos: (55, 26)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 182
+info: start round 183
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 183
+info: start round 184
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 184
+info: start round 185
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 32 at pos: (53, 46)
+Not safe path found unit: 44 at pos: (57, 52)
+Not safe path found unit: 51 at pos: (43, 58)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 185
+info: start round 186
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 44 at pos: (58, 52)
+Not safe path found unit: 51 at pos: (43, 59)
+Not safe path found unit: 67 at pos: (49, 12)
+Not safe path found unit: 73 at pos: (28, 59)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 186
+info: start round 187
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 187
+info: start round 188
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 188
+info: start round 189
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 189
+info: start round 190
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 190
+info: start round 191
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 191
+info: start round 192
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 64 at pos: (39, 18)
+Not safe path found unit: 70 at pos: (24, 59)
+Not safe path found unit: 73 at pos: (26, 57)
+Not safe path found unit: 77 at pos: (30, 57)
+Not safe path found unit: 79 at pos: (21, 59)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 192
+info: start round 193
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 33 at pos: (39, 16)
+Not safe path found unit: 64 at pos: (39, 17)
+Not safe path found unit: 70 at pos: (24, 58)
+Not safe path found unit: 73 at pos: (25, 57)
+Not safe path found unit: 77 at pos: (31, 57)
+Not safe path found unit: 79 at pos: (21, 58)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 193
+info: start round 194
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+Not safe path found unit: 33 at pos: (39, 15)
+Not safe path found unit: 64 at pos: (38, 17)
+Not safe path found unit: 70 at pos: (23, 58)
+Not safe path found unit: 73 at pos: (25, 58)
+Not safe path found unit: 77 at pos: (30, 57)
+Not safe path found unit: 79 at pos: (22, 58)
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 194
+info: start round 195
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 195
+info: start round 196
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 196
+info: start round 197
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 197
+info: start round 198
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 198
+info: start round 199
+info:     start player 0
+info:     end player 0
+info:     start player 1
+info:     end player 1
+info:     start player 2
+info:     end player 2
+info:     start player 3
+info:     end player 3
+info: end round 199
+info: player Luna got score 18742
+info: player Nymphadora got score 14062
+info: player SirNicolas got score 15511
+info: player Ron got score 6846
+info: player(s) got top score
+info: game played

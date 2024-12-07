@@ -1,12 +1,16 @@
 Action.o: Action.cc Action.hh Structs.hh Utils.hh Defs.hh
 AIDemo.o: AIDemo.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
  Defs.hh State.hh Action.hh Random.hh Registry.hh
-AIHermione.o: AIHermione.cc Player.hh Info.hh Settings.hh Structs.hh \
- Utils.hh Defs.hh State.hh Action.hh Random.hh Registry.hh
+AILuna.o: AILuna.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
+ Defs.hh State.hh Action.hh Random.hh Registry.hh
 AINull.o: AINull.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
  Defs.hh State.hh Action.hh Random.hh Registry.hh
+AINymphadora.o: AINymphadora.cc Player.hh Info.hh Settings.hh Structs.hh \
+ Utils.hh Defs.hh State.hh Action.hh Random.hh Registry.hh
 AIRon.o: AIRon.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
  Defs.hh State.hh Action.hh Random.hh Registry.hh
+AISirNicolas.o: AISirNicolas.cc Player.hh Info.hh Settings.hh Structs.hh \
+ Utils.hh Defs.hh State.hh Action.hh Random.hh Registry.hh
 Board.o: Board.cc Board.hh Info.hh Settings.hh Structs.hh Utils.hh \
  Defs.hh State.hh Action.hh Random.hh
 Game.o: Game.cc Game.hh Player.hh Info.hh Settings.hh Structs.hh Utils.hh \

@@ -1,0 +1,4 @@
+info: seed 1
+info: loading game
+info: loaded game
+Game: Game.cc:15: static void Game::run(std::__debug::vector<std::__cxx11::basic_string<char> >, std::istream&, std::ostream&, int): Assertion `np == (int)names.size()' failed.
