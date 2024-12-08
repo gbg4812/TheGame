@@ -1,6 +1,7 @@
 #include "Player.hh"
 #include "Structs.hh"
 #include <cmath>
+#include <cstddef>
 #include <iostream>
 #include <list>
 #include <queue>
@@ -39,12 +40,17 @@ struct PLAYER_NAME : public Player {
     // global vairables
     vector<Dir> wizard_dirs = {Up, Down, Right, Left};
     vector<Dir> ghost_dirs = {Down, DR, Right, RU, Up, UL, Left, LD};
+
+    // objective control
     set<Pos> taken_objectives;
-    map<int, list<Pos>> wizard_enemies;
+
+    // enemy stuff
     list<int> enemy_players;
-    int afaid_radius = 10;
-    int victim = 0;
     vector<vector<int>> enemy_distances;
+
+    // voldemort stuff
+    int afraid_radius = 10;
+    int victim = 0;
 
     /**
      * Play method, invoked once per each round.
@@ -52,11 +58,9 @@ struct PLAYER_NAME : public Player {
     virtual void play() {
         int max_path_len = 500;
         enemy_players.clear();
-        wizard_enemies.clear();
         taken_objectives.clear();
-        priority_queue<Move> movesq;
-        enemy_distances.resize(board_rows(), vector<int>(board_cols(), 0));
-        fillMat(enemy_distances, 0);
+        enemy_distances.resize(board_rows(), vector<int>(board_cols()));
+        fillMat(enemy_distances, 1000); // 1000 serà infinit
 
         // cast spell
         Unit ughost = unit(ghost(me()));
@@ -66,13 +70,13 @@ struct PLAYER_NAME : public Player {
 
         // chose enemy players
         for (int i = 0; i < 4; i++) {
-            if (i != me() and probab_win(i) < 0.40) {
+            if (i != me() and probab_win(i) < 0.3) {
                 enemy_players.push_back(i);
             }
         }
 
         // TODO: change objective only on demand
-        // TODO: compute enemyes with bfs
+        // TODO: voldemort ranking
 
         // voldemort objective
         int distvic = 1000;
@@ -83,17 +87,15 @@ struct PLAYER_NAME : public Player {
             }
         }
 
-        for (int wid : wizards(me())) {
-            Unit wiz = unit(wid);
-            for (int enpl : enemy_players) {
-                for (int en : wizards(enpl)) {
-                    if (distance(unit(en).pos, wiz.pos) > afaid_radius) {
-                        wizard_enemies[wid].push_back(unit(en).pos);
-                    }
-                }
+        // creat enemy map
+        for (int en : enemy_players) {
+            for (int enid : wizards(en)) {
+                Unit enw = unit(enid);
+                compute_mindist(enw.pos, 30);
             }
         }
 
+        priority_queue<Move> movesq;
         for (int id : wizards(me())) {
             Unit wiz = unit(id); // per cada mag meu
             movesq.push(search_targets(wiz.pos, max_path_len, id, wizard_dirs));
@@ -108,10 +110,10 @@ struct PLAYER_NAME : public Player {
         }
     }
 
-    void fillMat(vector<vector<int>> mat, int val) {
-        for (vector<int> &v : mat) {
-            for (int &el : v) {
-                el = val;
+    void fillMat(vector<vector<int>> &mat, int val) {
+        for (size_t i = 0; i < mat.size(); i++) {
+            for (size_t j = 0; j < mat[i].size(); j++) {
+                mat[i][j] = val;
             }
         }
     }
@@ -139,19 +141,27 @@ struct PLAYER_NAME : public Player {
         return n;
     }
 
-    bool bdf_pos(Pos resercher, Pos target, int dist,
-                 vector<vector<int>> &dists) {
+    void compute_mindist(Pos centroid, int max_dist) {
         queue<Pos> Q;
-        Q.push(resercher);
+        Q.push(centroid);
+        enemy_distances[centroid.i][centroid.j] = 0;
         while (not Q.empty()) {
             Pos pos = Q.front();
+            Q.pop();
+            int dist = enemy_distances[pos.i][pos.j];
 
-            if (dists[pos.i][pos.j] == -1)
+            if (dist < max_dist) {
                 for (auto dir : wizard_dirs) {
                     Pos npos = pos + dir;
+                    int ndist = dist + 1;
+                    if (pos_ok(npos) and cell(npos).is_empty() and
+                        enemy_distances[npos.i][npos.j] > ndist) {
+                        enemy_distances[npos.i][npos.j] = ndist;
+                        Q.push(npos);
+                    }
                 }
+            }
         }
-        return false;
     }
 
     bool safe_pos(Pos pos, int radius, int wiz) {
@@ -161,16 +171,16 @@ struct PLAYER_NAME : public Player {
             return false;
 
         if (unit(wiz).type == Wizard) {
-            for (Pos en : wizard_enemies[wiz]) {
-                if (distance(en, pos) < radius + 1)
-                    return false;
-            }
-        } else if (unit(wiz).type == Ghost) {
+            if (enemy_distances[pos.i][pos.j] < radius + 1)
+                return false;
+        }
+
+        if (unit(wiz).type == Ghost) {
             for (int i = 0; i < 4; i++) {
                 if (i != me()) {
                     for (int en : wizards(i)) {
                         int endist = distance(unit(en).pos, pos);
-                        if (endist < radius + 1 and endist < afaid_radius)
+                        if (endist < radius + 1 and endist < afraid_radius)
                             return false;
                     }
                 }
@@ -405,8 +415,8 @@ struct PLAYER_NAME : public Player {
             }
         }
 
-        cerr << "Not safe path found unit: " << uid << " at pos: " << pos
-             << endl;
+        // cerr << "Not safe path found unit: " << uid << " at pos: " << pos
+        // << endl;
         return {1, uid, default_desc.second};
     }
 };
