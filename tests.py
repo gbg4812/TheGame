@@ -35,7 +35,7 @@ for i in range(n):
         if info[i] == "info: end round 199":
             winer = ["none", 0]
             for j in range(4):
-                score = info[i + j].split()[2:]
+                score = info[i + j + 1].split()[2:]
                 if int(score[-1]) > winer[-1]:
                     winer[0] = score[0]
                     winer[-1] = int(score[-1])

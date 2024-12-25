@@ -1,7 +1,6 @@
 #include "Player.hh"
 #include "Structs.hh"
 #include <cmath>
-#include <cstddef>
 #include <list>
 #include <queue>
 
@@ -9,7 +8,7 @@
  * Write the name of your player and save this file
  * with the same name and .cc extension.
  */
-#define PLAYER_NAME SirNicolas
+#define PLAYER_NAME Albus
 
 struct PLAYER_NAME : public Player {
     /**
@@ -46,10 +45,11 @@ struct PLAYER_NAME : public Player {
     // enemy stuff
     list<int> enemy_players;
     vector<vector<int>> enemy_distances;
+    vector<vector<int>> ghost_enemy_dist;
 
     // voldemort stuff
     int afraid_radius = 10;
-    int victim = 0;
+    map<int, int> victims;
 
     /**
      * Play method, invoked once per each round.
@@ -58,8 +58,12 @@ struct PLAYER_NAME : public Player {
         int max_path_len = 500;
         enemy_players.clear();
         taken_objectives.clear();
+
         enemy_distances.resize(board_rows(), vector<int>(board_cols()));
         fillMat(enemy_distances, 1000); // 1000 serà infinit
+
+        ghost_enemy_dist.resize(board_rows(), vector<int>(board_cols()));
+        fillMat(ghost_enemy_dist, 1000); // 1000 serà infinit
 
         // cast spell
         Unit ughost = unit(ghost(me()));
@@ -67,6 +71,13 @@ struct PLAYER_NAME : public Player {
             enchantment();
         }
 
+        // current best 0.3
+        // 0.1 => 517
+        // 0.2 => 486
+        // 0.3 => 493, 456
+        // 0.4 => 354
+        // 0.5 => 16
+        // 0.6 => 2
         // chose enemy players
         for (int i = 0; i < 4; i++) {
             if (i != me() and probab_win(i) < 0.3) {
@@ -75,14 +86,27 @@ struct PLAYER_NAME : public Player {
         }
 
         // TODO: change objective only on demand
-        // TODO: voldemort ranking
 
         // voldemort objective
-        int distvic = 1000;
+
+        priority_queue<pair<int, int>> vobj;
         for (int i = 0; i < num_ini_wizards_per_clan() * 4; i++) {
             Unit wiz = unit(i);
-            if (pitagoras_dist(wiz.pos, pos_voldemort()) < distvic) {
-                victim = i;
+            int dist = pitagoras_dist(wiz.pos, pos_voldemort());
+            if (dist < afraid_radius) {
+                vobj.push({dist, i});
+            }
+        }
+
+        bool isfirst = true;
+        while (not vobj.empty()) {
+            auto vic = vobj.top();
+            vobj.pop();
+            Unit wiz = unit(vic.second);
+
+            if (wiz.player == me()) {
+                victims[vic.second] = isfirst;
+                isfirst = false;
             }
         }
 
@@ -90,7 +114,17 @@ struct PLAYER_NAME : public Player {
         for (int en : enemy_players) {
             for (int enid : wizards(en)) {
                 Unit enw = unit(enid);
-                compute_mindist(enw.pos, 30);
+                compute_mindist(enw.pos, 30, enemy_distances);
+            }
+        }
+
+        // create ghost enemy map
+        for (int en : {0, 1, 2, 3}) {
+            if (en != me()) {
+                for (int enid : wizards(en)) {
+                    Unit enw = unit(enid);
+                    compute_mindist(enw.pos, 30, ghost_enemy_dist);
+                }
             }
         }
 
@@ -140,22 +174,23 @@ struct PLAYER_NAME : public Player {
         return n;
     }
 
-    void compute_mindist(Pos centroid, int max_dist) {
+    void compute_mindist(Pos centroid, int max_dist,
+                         vector<vector<int>> &distance_map) {
         queue<Pos> Q;
         Q.push(centroid);
-        enemy_distances[centroid.i][centroid.j] = 0;
+        distance_map[centroid.i][centroid.j] = 0;
         while (not Q.empty()) {
             Pos pos = Q.front();
             Q.pop();
-            int dist = enemy_distances[pos.i][pos.j];
+            int dist = distance_map[pos.i][pos.j];
 
             if (dist < max_dist) {
                 for (auto dir : wizard_dirs) {
                     Pos npos = pos + dir;
                     int ndist = dist + 1;
                     if (pos_ok(npos) and cell(npos).is_empty() and
-                        enemy_distances[npos.i][npos.j] > ndist) {
-                        enemy_distances[npos.i][npos.j] = ndist;
+                        distance_map[npos.i][npos.j] > ndist) {
+                        distance_map[npos.i][npos.j] = ndist;
                         Q.push(npos);
                     }
                 }
@@ -164,10 +199,28 @@ struct PLAYER_NAME : public Player {
     }
 
     bool safe_pos(Pos pos, int radius, int wiz) {
-
         Cell c = cell(pos);
         if (c.type == Wall)
             return false;
+
+        auto vic = victims.find(wiz);
+        if (vic != victims.end()) {
+            Pos vdist = {abs(pos_voldemort().i - pos.i),
+                         abs(pos_voldemort().j - pos.j)};
+
+            if (vic->second) {
+                if ((vdist.i >= 2 + radius) or (vdist.j >= 2 + radius) or
+                    (vdist.j > radius and vdist.i > radius))
+                    return true;
+                else
+                    return false;
+            } else {
+                if ((vdist.i > 2) or (vdist.j > 2))
+                    return true;
+                else
+                    return false;
+            }
+        }
 
         if (unit(wiz).type == Wizard) {
             if (enemy_distances[pos.i][pos.j] < radius + 1)
@@ -175,34 +228,18 @@ struct PLAYER_NAME : public Player {
         }
 
         if (unit(wiz).type == Ghost) {
-            for (int i = 0; i < 4; i++) {
-                if (i != me()) {
-                    for (int en : wizards(i)) {
-                        int endist = distance(unit(en).pos, pos);
-                        if (endist < radius + 1 and endist < afraid_radius)
-                            return false;
-                    }
-                }
-            }
+            if (ghost_enemy_dist[pos.i][pos.j] < radius + 1)
+                return false;
         }
 
-        if (c.id != -1 and unit(c.id).player == me() and radius == 1)
+        if (c.id != -1 and unit(c.id).player == me() and radius < 10)
             return false;
 
-        if (wiz == victim) {
-            Pos vdist = {abs(pos_voldemort().i - pos.i),
-                         abs(pos_voldemort().j - pos.j)};
+        Pos vdist = {abs(pos_voldemort().i - pos.i),
+                     abs(pos_voldemort().j - pos.j)};
 
-            if ((vdist.i < 2 + radius and vdist.j < 1) or
-                (vdist.j < 2 + radius and vdist.i < 1))
-                return false;
-        } else {
-            Pos vdist = {abs(pos_voldemort().i - pos.i),
-                         abs(pos_voldemort().j - pos.j)};
-
-            if ((vdist.i < 3 and vdist.j < 2) or (vdist.j < 3 and vdist.i < 2))
-                return false;
-        }
+        if ((vdist.i < 3 and vdist.j < 2) or (vdist.j < 3 and vdist.i < 2))
+            return false;
 
         return true;
     }
@@ -293,13 +330,17 @@ struct PLAYER_NAME : public Player {
         }
 
         Unit u = unit(c.id);
-        if (u.type == Ghost)
-            return {false, 0};
+        if (u.type == Ghost) {
+            if (round() - u.last_attack_received() < rounds_no_attack_ghost())
+                return {false, 0};
+            else
+                return {true, 0};
+        }
 
         if (u.player == me() and u.is_in_conversion_process() and
             u.rounds_for_converting() <= dist) {
             taken_objectives.insert(it, p);
-            return {true, 0};
+            return {true, -1};
         }
 
         if (u.player != me() and not u.is_in_conversion_process()) {
@@ -313,16 +354,21 @@ struct PLAYER_NAME : public Player {
             }
         }
 
-        if (u.player != me() and u.is_in_conversion_process() and
-            u.player_to_be_converted_to() != me()) {
-            taken_objectives.insert(it, p);
-            if (dist == 2)
-                return {true, -1};
-            else if (dist == 1) {
-                return {true, 2};
-            } else {
-                return {true, 0};
-            }
+        return {false, 0};
+    }
+
+    pair<bool, int> wizard_in_conv(Pos p, int dist) {
+        Cell c = cell(p);
+        if (c.is_empty())
+            return {false, 0};
+
+        Unit u = unit(c.id);
+        if (u.type == Ghost)
+            return {false, 0};
+
+        if (u.player == me() and not u.is_in_conversion_process() and
+            dist > 1) {
+            return {true, 0};
         }
 
         return {false, 0};
@@ -369,18 +415,18 @@ struct PLAYER_NAME : public Player {
             Q.pop();
             parents.emplace(nod);
             pair<bool, int> score;
-            if (unit(uid).type == Wizard)
+            if (unit(uid).type == Wizard and
+                not unit(uid).is_in_conversion_process())
                 score = wizard_cell_eval(nod.first,
                                          distances[nod.first.i][nod.first.j]);
+            else if (unit(uid).type == Wizard)
+                score = wizard_in_conv(nod.first,
+                                       distances[nod.first.i][nod.first.j]);
             else if (unit(uid).type == Ghost) {
                 score = ghost_cell_eval(nod.first,
                                         distances[nod.first.i][nod.first.j]);
             }
             if (score.first) {
-                // cerr << "Interesting path for witcher at: " << pos <<
-                // endl; cerr << "Interesting element at pos: " << nod.first
-                // << endl; cerr << "Direction to follow: " << nod.second <<
-                // endl;
 
                 // if has a enemy touching high priority
                 if (danger)
@@ -414,8 +460,6 @@ struct PLAYER_NAME : public Player {
             }
         }
 
-        // cerr << "Not safe path found unit: " << uid << " at pos: " << pos
-        // << endl;
         return {1, uid, default_desc.second};
     }
 };
