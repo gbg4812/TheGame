@@ -13,4 +13,4 @@ Finally every mage searches for a path to a desired objective allways being far 
 And de Ghost... Searches for books to learn how to cast faster spells!
 
 ## Tooling:
-Mybe the best part is the python script that runs the tests to enshure that a improvement is an improvement.
+Mybe the best part is the python script that runs the tests to enshure that an improvement is an improvement.
